@@ -1,0 +1,145 @@
+body {
+	padding: 50px 0;
+	text-align: center;
+  background-color: #c3c3c3;
+  background-image:   url("https://www.transparenttextures.com/patterns/buried.png");
+
+}
+p {
+  margin-top:10%;
+  display:block;
+  background-color: silver;
+  width:400px;
+}
+hr {
+  width:70%;
+  border-top: solid black 2px;
+  border-bottom: dotted silver 5px;
+}
+
+input {
+	margin-bottom: 30px;
+}
+
+div {
+	color: white;
+}
+
+.tanque {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 400px;
+	height: 300px;
+	border-radius: 100px/55px;
+	background-color: rgba(160, 160, 160, 0.5);
+  border: dotted black 1px;
+}
+
+.tanque:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 400px;
+	height: 100px;
+	border-radius: 100px/55px;
+	background-color: rgba(160, 160, 160, 0.2);
+  border: dotted black 2px;
+	content: '';
+}
+
+.tanque:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 400px;
+	height: 100px;
+	border-radius: 100px/55px;
+	background-color: rgba(160, 160, 160, 0.4);
+  border: dotted black 2px;
+	content: '';
+}
+
+.agua {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 400px;
+	height: 0;
+	padding-top: 50px;
+	border-radius: 100px/55px;
+	background-color: rgba(19, 212, 254, 0.42);
+	transition: 0.3s linear;
+}
+
+.agua:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 400px;
+	height: 100px;
+	border-radius: 100px/55px;
+	background-color: rgba(0, 160, 160, 0.2);
+	content: '';
+}
+
+.agua:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 400px;
+	height: 10px;
+	border-radius: 100px/55px;
+	background-color: rgba(0, 160, 160, 0.4);
+	content: '';
+}
+
+.agua--0:checked ~ .tanque .agua {
+	bottom: -50px;
+  //height: calc(250px * 0.1);
+}
+
+.agua--30:checked ~ .tanque .agua {
+	height: calc(250px * 0.3);
+}
+
+.agua--50:checked ~ .tanque .agua {
+	height: calc(250px * 0.5);
+}
+
+.agua--90:checked ~ .tanque .agua {
+	height: calc(250px * 0.90);
+}
+.agua--100:checked ~ .tanque .agua {
+	height: calc(250px * 1);
+}
+.agua--100:checked ~ .tanque p {
+	display:none;
+}
+
+.terreno {
+	overflow: hidden;
+	margin: 0 auto;
+  width:80%;
+	height: 50px;
+	border-radius: 100px/55px;
+	background-color: rgba(76, 175, 80, 0.55);
+  border: dotted black 1px;
+  padding:85px;
+}
+
+.maiz {
+  margin:75px;
+  color:yellow;
+  background-color: rgba(255,255,255,0.0);
+  display:inline;
+}
+body > div.row.terreno > div:nth-child(1),
+body > div.row.terreno > div:nth-child(2),
+body > div.row.terreno > div:nth-child(3),
+body > div.row.terreno > div:nth-child(4),
+body > div.row.terreno > div:nth-child(5),
+body > div.row.terreno > div:nth-child(6){
+  
+   display:inline;
+}

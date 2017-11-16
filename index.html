@@ -1,19 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+   <head>
+      <meta charset="UTF-8">
+      <title>simulador</title>
+      <link rel="stylesheet" type="text/css" href="./css/template.css">
+   </head>
+   <body>
+      <input type="radio" name="agua" checked class="agua--0" id="r0">
+      <label for="r0">vacio</label>
+      <input type="radio" name="agua" class="agua--30" id="r1">
+      <label for="r1">30%</label>
+      <input type="radio" name="agua" class="agua--50" id="r2">
+      <label for="r2">50%</label>
+      <input type="radio" name="agua" class="agua--90" id="r3">
+      <label for="r3">90%</label>
+      <input type="radio" name="agua" class="agua--100" id="r4">
+      <label for="r4">100%</label>
+      <div class="tanque">
+         <p>Tanque</p>
+         <div class="agua">
+            Agua
+         </div>
+      </div>
+      ║
+      <hr>
+      <div class="terreno">
+         maiz
+         <div>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+         </div>
+         <div>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+         </div>
+         <div>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+         </div>
+         <div>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+         </div>
+         <div>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+         </div>
+         <div>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+            <p class="maiz">░ ░ ░ ░ ░ ░</p>
+         </div>
+      </div>
+      <script>
+         // You can also require other files to run in this process
+         require('./renderer.js')
+      </script>
+   </body>
 </html>
